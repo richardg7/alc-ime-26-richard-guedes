@@ -46,6 +46,6 @@ Basta possuir o Python instalado com a biblioteca Numpy. Execute o arquivo da se
 ```bash
 python alc-p1-Q5-richard.py
 ```
-*(Nota: Lembre-se de verificar o nome exato do arquivo `.py` conforme a restrição do enunciado `alc-p1-Q5-<nome>.py`)*
+
 
 Ao rodar o arquivo, o bloco de execução principal (`__main__`) testará automaticamente um sistema $2x2$ de exemplo, imprimindo passo a passo a decomposição LU e exibindo o vetor solução final.
