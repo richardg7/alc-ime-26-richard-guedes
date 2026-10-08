@@ -58,7 +58,7 @@ def resolve_lu(A, b):
         
     return L, U, x
 
-# Bloco de testes (opcional) para você demonstrar que a função funciona
+# Bloco de testes (opcional) para demonstrar que a função funciona
 if __name__ == '__main__':
     # Exemplo de sistema:
     # 2x1 + 3x2 = 8
