@@ -23,7 +23,7 @@ def resolve_lu(A, b):
         # Preenche a linha k da matriz U (que recebe os coeficientes atualizados)
         for j in range(k, n):
             U[k, j] = A[k, j]
-            print(U)
+            #print(U)
             
         # Calcula os multiplicadores e preenche a coluna k da matriz L
         for i in range(k+1, n):
@@ -31,12 +31,12 @@ def resolve_lu(A, b):
             m = A[i, k] / U[k, k]
             # O multiplicador é armazenado na matriz L
             L[i, k] = m
-            print(L)
+            #print(L)
             
             # Atualiza os elementos restantes da matriz A
             for j in range(k, n):
                 A[i, j] = A[i, j] - (m * U[k, j])
-                print(A)
+                #print(A)
                 
     # 2. Substituição Progressiva (Ly = b)
     y = np.zeros(n)
@@ -45,7 +45,7 @@ def resolve_lu(A, b):
         for j in range(i):
             soma += L[i, j] * y[j]
         y[i] = b[i] - soma
-        print(y)
+        #print(y)
         
     # 3. Substituição Regressiva (Ux = y)
     x = np.zeros(n)
@@ -54,7 +54,7 @@ def resolve_lu(A, b):
         for j in range(i + 1, n):
             soma += U[i, j] * x[j]
         x[i] = (y[i] - soma) / U[i, i]
-        print(x)
+        #print(x)
         
     return L, U, x
 
