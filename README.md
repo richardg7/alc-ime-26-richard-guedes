@@ -59,11 +59,11 @@ Abaixo, a representação visual explicativa das matrizes no console:
 
 ![Execução e Matrizes](01.png)
 
-### Vídeo da Resolução (Clique na imagem para assistir no YouTube)
+### Vídeo da Resolução
 
-Para assistir à explicação detalhada do código com a representação visual explicativa das matrizes no console, clique na imagem abaixo. Você será redirecionado para o vídeo no YouTube:
+*(Nota: O GitHub bloqueia players de vídeo do YouTube embutidos dentro de arquivos README por motivos de segurança anti-injeção de código. Clique na miniatura abaixo para assistir no YouTube)*
 
-[![Assistir ao Vídeo no YouTube](01.png)](https://youtu.be/tkRw3qfVgNY)
+[![Vídeo no YouTube](https://img.youtube.com/vi/tkRw3qfVgNY/maxresdefault.jpg)](https://youtu.be/tkRw3qfVgNY)
 
 ---
 
