@@ -67,16 +67,16 @@ Abaixo, a representação visual explicativa das matrizes no console:
 
 ---
 
-### Resumo da Explicação (Roteiro do Vídeo)
+### Resumo da Explicação
 
-Para facilitar o acompanhamento, segue a síntese do raciocínio estruturado no vídeo (com duração de ~1m15s):
+Para facilitar o acompanhamento, segue a síntese do raciocínio estruturado no vídeo:
 
-1. **Abertura (0:00 - 0:10):** 
+1. **Abertura:** 
    Apresentação da função `resolve_lu`, construída importando exclusivamente os construtores básicos do `numpy` (restrição da questão). As matrizes $L$ e $U$ são inicializadas com a identidade e zeros, respectivamente.
-2. **Decomposição LU e Multiplicadores (0:11 - 0:35):** 
+2. **Decomposição LU e Multiplicadores:** 
    No loop de decomposição (linha 18), há a checagem de pivô nulo, disparando uma `Exception` se necessário. Os elementos de $U$ recebem a cópia do estado atual da matriz. 
    **O ponto mais importante** ocorre na linha 29: o multiplicador $m$ é calculado pela divisão do elemento pelo pivô. Assim que $m$ é obtido, ele é **armazenado diretamente na posição correspondente de $L$** (linha 33), demonstrando como a matriz $L$ herda explicitamente os multiplicadores da eliminação de Gauss.
-3. **Resolução por Substituição (0:36 - 0:55):** 
+3. **Resolução por Substituição:** 
    Na segunda etapa, a matriz $L$ construída é utilizada para resolver $Ly = b$ via *Substituição Progressiva* (linha 42). A seguir, a matriz $U$ é empregada para resolver $Ux = y$ via *Substituição Regressiva* (linha 51), percorrendo o sistema de baixo para cima.
-4. **Fechamento e Teste (0:56 - 1:15):** 
+4. **Fechamento e Teste:** 
    A função retorna $L$, $U$ e $x$. Executando o teste ao final do código, comprova-se visualmente a correção do método: a matriz $L$ armazena os multiplicadores abaixo da diagonal principal com 1s na diagonal, $U$ torna-se perfeitamente triangular superior, e o vetor $x$ atinge o resultado matemático exato.
