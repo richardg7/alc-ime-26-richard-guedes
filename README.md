@@ -59,12 +59,11 @@ Abaixo, a representação visual explicativa das matrizes no console:
 
 ![Execução e Matrizes](01.png)
 
-### Vídeo da Resolução
-Para assistir à explicação detalhada do código e ver as operações em andamento, reproduza o vídeo abaixo:
+### Vídeo da Resolução (Clique na imagem para assistir)
 
+Para assistir à explicação detalhada do código com a representação visual explicativa das matrizes no console, clique na imagem abaixo. Você será redirecionado para o player nativo do próprio GitHub:
 
-
-
+[![Assistir ao Vídeo](01.png)](https://github.com/richardg7/alc-ime-26-richard-guedes/blob/main/alc-p1-Q5-richard.mp4)
 
 ---
 
